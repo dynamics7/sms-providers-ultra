@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMS_Providers_Ultra", "SMS_Providers_Ultra\SMS_Providers_Ultra.vcproj", "{AAC30F0C-9810-48A8-9485-731FDB1031AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		HTC|Windows Mobile 6 Professional SDK (ARMV4I) = HTC|Windows Mobile 6 Professional SDK (ARMV4I)
+		Samsung|Windows Mobile 6 Professional SDK (ARMV4I) = Samsung|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAC30F0C-9810-48A8-9485-731FDB1031AE}.HTC|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = HTC|Windows Mobile 6 Professional SDK (ARMV4I)
+		{AAC30F0C-9810-48A8-9485-731FDB1031AE}.HTC|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = HTC|Windows Mobile 6 Professional SDK (ARMV4I)
+		{AAC30F0C-9810-48A8-9485-731FDB1031AE}.Samsung|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Samsung|Windows Mobile 6 Professional SDK (ARMV4I)
+		{AAC30F0C-9810-48A8-9485-731FDB1031AE}.Samsung|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = Samsung|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
