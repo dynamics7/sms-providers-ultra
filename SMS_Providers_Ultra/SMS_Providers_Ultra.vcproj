@@ -208,6 +208,103 @@
 			<DebuggerTool
 			/>
 		</Configuration>
+		<Configuration
+			Name="Microsoft|Windows Mobile 6 Professional SDK (ARMV4I)"
+			OutputDirectory="Windows Mobile 6 Professional SDK (ARMV4I)\$(ConfigurationName)"
+			IntermediateDirectory="Windows Mobile 6 Professional SDK (ARMV4I)\$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TargetEnvironment="1"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				ExecutionBucket="7"
+				Optimization="3"
+				AdditionalIncludeDirectories="D:\src\wp7\dynamics7\arm\SMS_Providers_Ultra\SMS_Providers_Ultra;D:\pb\WP710\PUBLIC\CELLCORE\OAK\INC;D:\pb\WP710\PUBLIC\COMMON\OAK\INC;D:\pb\WP710\PUBLIC\COMMON\SDK\INC;D:\pb\WP710\PUBLIC\SHELLW\SDK\INC;D:\pb\WP710\PUBLIC\WEBPLATFORM\OAK\INC;D:\pb\WP710\PUBLIC\IE7\SDK\INC;D:\pb\WP710\PUBLIC\SHCORE\SDK\INC;D:\pb\WP710\OTHERS\ATL9\INCLUDE;D:\pb\WP710\OTHERS\CECRT\ALTCECRT"
+				PreprocessorDefinitions="_DEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES);WINCE;DEBUG;_WINDOWS;_USRDLL;SMS_PROVIDERS_ULTRA_EXPORTS;$(ARCHFAM);$(_ARCHFAM_);_UNICODE;UNICODE;FORMS"
+				IgnoreStandardIncludePath="false"
+				MinimalRebuild="true"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+				ForcedIncludeFiles=""
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES)"
+				Culture="1033"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions=" /subsystem:windowsce,7.00"
+				AdditionalDependencies="coredll7.lib"
+				OutputFile="$(OutDir)/SMS_Providers_uMS.dll"
+				LinkIncremental="2"
+				ModuleDefinitionFile="sms_providers_microsoft.def"
+				DelayLoadDLLs="$(NOINHERIT)"
+				GenerateDebugInformation="false"
+				ProgramDatabaseFile="$(OutDir)/SMS_Providers_Ultra.pdb"
+				SubSystem="0"
+				StackReserveSize="65536"
+				StackCommitSize="4096"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				ImportLibrary="$(OutDir)/SMS_Providers_Ultra.lib"
+				TargetMachine="0"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCCodeSignTool"
+				AuthenticodeSignature="true"
+				Certificate="SHA-1 Hash=34CE88D718DA488434C48D4F5BB2C5D7DF144195|34CE88D718DA488434C48D4F5BB2C5D7DF144195"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="mkdir &quot;$(SolutionDir)Release&quot;&#x0D;&#x0A;copy /B &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Release\&quot;&#x0D;&#x0A;"
+			/>
+			<DeploymentTool
+				ForceDirty="-1"
+				RemoteDirectory=""
+				RegisterOutput="0"
+				AdditionalFiles=""
+			/>
+			<DebuggerTool
+			/>
+		</Configuration>
 	</Configurations>
 	<References>
 	</References>
@@ -223,6 +320,10 @@
 			</File>
 			<File
 				RelativePath=".\sms_providers_htc.def"
+				>
+			</File>
+			<File
+				RelativePath=".\sms_providers_microsoft.def"
 				>
 			</File>
 			<File
@@ -246,6 +347,14 @@
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Samsung|Windows Mobile 6 Professional SDK (ARMV4I)"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Microsoft|Windows Mobile 6 Professional SDK (ARMV4I)"
 					>
 					<Tool
 						Name="VCCLCompilerTool"

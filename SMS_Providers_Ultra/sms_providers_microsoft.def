@@ -1,0 +1,68 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+
+LIBRARY SMS_Providers
+
+EXPORTS
+	DllMain
+	Text_RecognizeMessage=sms_providers.Text_RecognizeMessage
+	Text_GetMessageInfo=sms_providers.Text_GetMessageInfo
+	Text_Send ;=sms_providers.Text_Send
+	Text_GetSize=sms_providers.Text_GetSize
+	Text_Read=sms_providers.Text_Read
+	Text_CalculateFragments=sms_providers.Text_CalculateFragments
+	Notify_RecognizeMessage=sms_providers.Notify_RecognizeMessage
+	Notify_GetMessageInfo=sms_providers.Notify_GetMessageInfo
+	Notify_Send=sms_providers.Notify_Send
+	Notify_GetSize=sms_providers.Notify_GetSize
+	Notify_Read=sms_providers.Notify_Read
+	Notify_RecognizeMessageInSim=sms_providers.Notify_RecognizeMessageInSim
+	Notify_GetMessageInfoInSim=sms_providers.Notify_GetMessageInfoInSim
+	Notify_GetSizeInSim=sms_providers.Notify_GetSizeInSim
+	Notify_ReadInSim=sms_providers.Notify_ReadInSim
+	WDP_RecognizeMessage=sms_providers.WDP_RecognizeMessage
+	WDP_GetMessageInfo=sms_providers.WDP_GetMessageInfo
+	WDP_Send=sms_providers.WDP_Send
+	WDP_GetSize=sms_providers.WDP_GetSize
+	WDP_Read=sms_providers.WDP_Read
+	WCMP_RecognizeMessage=sms_providers.WCMP_RecognizeMessage
+	WCMP_GetMessageInfo=sms_providers.WCMP_GetMessageInfo
+	WCMP_Send=sms_providers.WCMP_Send
+	WCMP_GetSize=sms_providers.WCMP_GetSize
+	WCMP_Read=sms_providers.WCMP_Read
+	Status_RecognizeMessage=sms_providers.Status_RecognizeMessage
+	Status_GetMessageInfo=sms_providers.Status_GetMessageInfo
+	Status_Send=sms_providers.Status_Send
+	Status_GetSize=sms_providers.Status_GetSize
+	Status_Read=sms_providers.Status_Read
+	Status_IdentifyGroup=sms_providers.Status_IdentifyGroup
+	Status_GetStatus=sms_providers.Status_GetStatus
+	Broadcast_RecognizeMessage=sms_providers.Broadcast_RecognizeMessage
+	Broadcast_GetMessageInfo=sms_providers.Broadcast_GetMessageInfo
+	Broadcast_Send=sms_providers.Broadcast_Send
+	Broadcast_GetSize=sms_providers.Broadcast_GetSize
+	Broadcast_Read=sms_providers.Broadcast_Read
+	Raw_RecognizeMessage=sms_providers.Raw_RecognizeMessage
+	Raw_GetMessageInfo=sms_providers.Raw_GetMessageInfo
+	Raw_Send=sms_providers.Raw_Send
+	Raw_GetSize=sms_providers.Raw_GetSize
+	Raw_Read=sms_providers.Raw_Read
+	Class2_RecognizeMessage=sms_providers.Class2_RecognizeMessage
+	Class2_GetMessageInfo=sms_providers.Class2_GetMessageInfo
+	Class2_Send=sms_providers.Class2_Send
+	Class2_GetSize=sms_providers.Class2_GetSize
+	Class2_Read=sms_providers.Class2_Read
+	Class2_RecognizeMessageInSim=sms_providers.Class2_RecognizeMessageInSim
+	Class2_GetMessageInfoInSim=sms_providers.Class2_GetMessageInfoInSim
+	Class2_GetSizeInSim=sms_providers.Class2_GetSizeInSim
+	Class2_ReadInSim=sms_providers.Class2_ReadInSim
+	Class2Data_RecognizeMessage=sms_providers.Class2Data_RecognizeMessage
+	Class2Data_GetMessageInfo=sms_providers.Class2Data_GetMessageInfo
+	Class2Data_Send=sms_providers.Class2Data_Send
+	Class2Data_GetSize=sms_providers.Class2Data_GetSize
+	Class2Data_Read=sms_providers.Class2Data_Read
+	Class2Data_RecognizeMessageInSim=sms_providers.Class2Data_RecognizeMessageInSim
+	Class2Data_GetMessageInfoInSim=sms_providers.Class2Data_GetMessageInfoInSim
+	Class2Data_GetSizeInSim=sms_providers.Class2Data_GetSizeInSim
+	Class2Data_ReadInSim=sms_providers.Class2Data_ReadInSim

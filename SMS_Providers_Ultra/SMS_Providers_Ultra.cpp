@@ -18,10 +18,14 @@ HRESULT Text_Send(LPVOID smsmcCookie,
     HRESULT hr = E_FAIL;
     if (textSend == NULL)
     {
+        HMODULE hLibrary = NULL;
 #ifdef FORHTC
-        HMODULE hLibrary = LoadLibrary(L"SMS_Providers_OEM.dll");
+        hLibrary = LoadLibrary(L"SMS_Providers_OEM.dll");
 #elif FORSAMSUNG
-        HMODULE hLibrary = LoadLibrary(L"Mits_SMS_Providers.dll");
+        hLibrary = LoadLibrary(L"Mits_SMS_Providers.dll");
+#else
+        // failsafe
+        hLibrary = LoadLibrary(L"sms_providers.dll");
 #endif
         textSend = (TEXT_SEND)GetProcAddressW(hLibrary, L"Text_Send");
     }
